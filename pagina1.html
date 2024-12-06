@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Nome da Rosa - Página Inicial</title>
+    <style>
+        /* Estilo geral */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #121212; /* Fundo preto profundo */
+            color: #eaeaea; /* Texto claro */
+            line-height: 1.8;
+            overflow-x: hidden; /* Evita scroll lateral */
+        }
+
+        /* Cabeçalho */
+        header {
+            background: rgba(0, 0, 0, 0.9); /* Fundo preto com opacidade */
+            padding: 30px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #e50914; /* Vermelho destaque */
+            margin: 0;
+            text-shadow: 2px 2px 10px rgba(229, 9, 20, 0.8); /* Efeito brilhante */
+        }
+
+        header p {
+            font-size: 1.3em;
+            font-style: italic;
+            color: #ffffff;
+            margin-top: 10px;
+        }
+
+        /* Navegação */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 5px;
+            background-color: transparent;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #e50914;
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+
+        /* Conteúdo principal */
+        .container {
+            text-align: center;
+            padding: 80px 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .container h2 {
+            font-size: 3em;
+            color: #eaeaea;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .container p {
+            font-size: 1.4em;
+            color: #cccccc;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        /* Botão */
+        .btn {
+            background-color: #e50914;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.3em;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:hover {
+            background-color: #b71c1c;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Rodapé */
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: #eaeaea;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1em;
+        }
+
+        footer span {
+            color: #e50914;
+        }
+
+        /* Animação */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            nav a {
+                font-size: 1em;
+            }
+
+            .container h2 {
+                font-size: 2.5em;
+            }
+
+            .btn {
+                font-size: 1.1em;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                font-size: 0.9em;
+                padding: 8px 12px;
+            }
+
+            .container h2 {
+                font-size: 2em;
+            }
+
+            .btn {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>O Nome da Rosa</h1>
+        <p>"O mistério é apenas o começo da busca pelo conhecimento."</p>
+       
+    </header>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h2>Bem-vindo ao site de O Nome da Rosa</h2>
+        <p>
+            Explore os mistérios, os personagens e as curiosidades dessa obra icônica baseada no romance de Umberto Eco.
+        </p>
+        <a href="pagina2.html" class="btn">Começar Jornada</a>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        &copy; 2024 - Criado por <span>Larissa</span>.
+    </footer>
+</body>
+</html>

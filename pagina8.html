@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Nome da Rosa - Galeria</title>
+    <style>
+        /* Estilo geral */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f5f5, #d7ccc8);
+            color: #3b2f2f;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .header-container h1 {
+            margin: 0;
+            font-size: 3em;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #e50914;
+            text-shadow: 0 2px 10px rgba(229, 9, 20, 0.8);
+        }
+
+        .header-container p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+            font-style: italic;
+            color: #ffffff;
+        }
+
+        /* Navegação */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            margin-top: 15px;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #e50914;
+            transform: scale(1.1);
+        }
+
+        nav a.active {
+            background-color: #e50914;
+        }
+
+        /* Conteúdo principal */
+        .container {
+            text-align: center;
+            padding: 60px 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .container h2 {
+            font-size: 2.5em;
+            color: #5d4037;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: #5d4037;
+            line-height: 1.8;
+        }
+
+        /* Galeria de imagens */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px; /* Altura uniforme */
+            object-fit: cover; /* Recorte proporcional para preencher o espaço */
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #3b2f2f;
+            color: #fef9f4;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1em;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        footer span {
+            color: #e50914;
+        }
+
+        /* Animação de fade-in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Estilos para telas pequenas */
+        @media (max-width: 768px) {
+            .header-container h1 {
+                font-size: 2.5em;
+            }
+
+            .header-container p {
+                font-size: 1em;
+            }
+
+            nav a {
+                font-size: 1em;
+                padding: 8px 16px;
+            }
+
+            .container h2 {
+                font-size: 2em;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-container h1 {
+                font-size: 2em;
+            }
+
+            .header-container p {
+                font-size: 0.9em;
+            }
+
+            nav a {
+                font-size: 0.9em;
+                padding: 6px 12px;
+            }
+
+            .container h2 {
+                font-size: 1.8em;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>O Nome da Rosa</h1>
+            <p>"A verdade está na busca, não na resposta."</p>
+        </div>
+        <nav>
+            <a href="pagina1.html" class="nav-link">Início</a>
+            <a href="pagina2.html">Introdução</a>
+            <a href="pagina3.html">Sinopse</a>
+            <a href="pagina4.html">Personagens</a>
+            <a href="pagina5.html">Contexto Histórico</a>
+            <a href="pagina6.html">Temas</a>
+            <a href="pagina7.html">Produção</a>
+            <a href="pagina8.html" class="active">Galeria</a>
+            <a href="pagina9.html">Trailer</a>
+            <a href="pagina10.html">Curiosidades</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Galeria de Imagens</h2>
+        <p>Explore as imagens do filme "O Nome da Rosa" e mergulhe na atmosfera medieval e misteriosa que o cerca.</p>
+
+        <div class="gallery">
+            <img src="../assets/imagem1.jpg" alt="Imagem 1">
+            <img src="../assets/imagem2.jpg" alt="Imagem 2">
+            <img src="../assets/imagem3.jpg" alt="Imagem 3">
+            <img src="../assets/imagem4.jpg" alt="Imagem 4">
+            <img src="../assets/imagem5.jpg" alt="Imagem 5">
+            <img src="../assets/imagem6.jpg" alt="Imagem 6">
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 - Criado por <span>Larissa</span>.
+    </footer>
+</body>
+</html>

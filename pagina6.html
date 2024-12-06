@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Nome da Rosa - Temas</title>
+    <style>
+        /* Estilo geral */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f5f5, #d7ccc8);
+            color: #3b2f2f;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .header-container h1 {
+            margin: 0;
+            font-size: 3em;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #e50914;
+            text-shadow: 0 2px 10px rgba(229, 9, 20, 0.8);
+        }
+
+        .header-container p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+            font-style: italic;
+            color: #ffffff;
+        }
+
+        /* Navegação */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            margin-top: 15px;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #e50914;
+            transform: scale(1.1);
+        }
+
+        nav a.active {
+            background-color: #e50914;
+        }
+
+        /* Conteúdo principal */
+        .container {
+            text-align: center;
+            padding: 60px 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .container h2 {
+            font-size: 2.5em;
+            color: #5d4037;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .container p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: #5d4037;
+            line-height: 1.8;
+        }
+
+        .container p strong {
+            color: #e50914;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #3b2f2f;
+            color: #fef9f4;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1em;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        footer span {
+            color: #e50914;
+        }
+
+        /* Animação de fade-in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Estilos para telas pequenas */
+        @media (max-width: 768px) {
+            .header-container h1 {
+                font-size: 2.5em;
+            }
+
+            .header-container p {
+                font-size: 1em;
+            }
+
+            nav a {
+                font-size: 1em;
+                padding: 8px 16px;
+            }
+
+            .container h2 {
+                font-size: 2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-container h1 {
+                font-size: 2em;
+            }
+
+            .header-container p {
+                font-size: 0.9em;
+            }
+
+            nav a {
+                font-size: 0.9em;
+                padding: 6px 12px;
+            }
+
+            .container h2 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>O Nome da Rosa</h1>
+            <p>"A verdade está na busca, não na resposta."</p>
+        </div>
+        <nav>
+            <a href="pagina1.html" class="nav-link">Início</a>
+            <a href="pagina2.html">Introdução</a>
+            <a href="pagina3.html">Sinopse</a>
+            <a href="pagina4.html">Personagens</a>
+            <a href="pagina5.html">Contexto Histórico</a>
+            <a href="pagina6.html" class="active">Temas</a>
+            <a href="pagina7.html">Produção</a>
+            <a href="pagina8.html">Galeria</a>
+            <a href="pagina9.html">Trailer</a>
+            <a href="pagina10.html">Curiosidades</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Temas em "O Nome da Rosa"</h2>
+        <p>
+            <strong>"O Nome da Rosa"</strong> explora temas fundamentais como:
+            <ul style="text-align: left; max-width: 800px; margin: 0 auto; padding: 0 20px; color: #5d4037;">
+                <li><strong>Fé vs. Razão:</strong> O filme explora o confronto entre o pensamento lógico e o dogmatismo religioso, representados por William de Baskerville e a Inquisição, respectivamente.</li>
+                <li><strong>Censura e Controle do Conhecimento:</strong> A trama aborda como a Igreja monopolizava e controlava o saber, destruindo ou ocultando textos considerados perigosos.</li>
+                <li><strong>Inquisição e Abuso de Poder:</strong> Mostra a intolerância e a violência usadas pela Inquisição para manter o poder e a ordem.</li>
+                <li><strong>Riso e Religião:</strong> A proibição do humor reflete o medo da subversão da autoridade religiosa, destacando como até mesmo o riso pode ser uma ameaça política.</li>
+                <li><strong>Moralidade e Corrupção:</strong> Questiona a integridade das instituições religiosas e a hipocrisia presente no mosteiro.</li>
+                <li><strong>Choque entre Tradição e Mudança:</strong> Representa o embate entre a preservação das tradições e a busca por novas ideias, simbolizando o início de transformações que levariam ao Renascimento.</li>
+            </ul>
+        </p>
+        <p>
+            Esses temas transformam o filme em uma reflexão profunda sobre poder, conhecimento e liberdade.
+        </p>
+    </div>
+
+    <footer>
+        &copy; 2024 - Criado por <span>Larissa</span>.
+    </footer>
+</body>
+</html>
